@@ -13,3 +13,14 @@ def recognize2(url):
         print(response.json())
     response = response.json()
     return response
+def json1(data):
+    import json
+    s = json.dumps(data)
+    s1 = json.loads(s)
+    # print (s1["words_result"])
+    s2 = str(s1["words_result"])
+    # print(s2.replace(' ', '')[11:15])
+    # print(s2)
+    s3 = s2.replace(' ', '')
+    # print(s3)
+    return s3[11:15]

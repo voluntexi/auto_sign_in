@@ -109,7 +109,6 @@ except:
 print(image)
 from recognize import recognize2
 data2 = recognize2(image)
-print(data1)
 from recognize import json1
 m = json1(data2)
 browser.find_elements_by_class_name("van-field__control")[2].send_keys(m)
