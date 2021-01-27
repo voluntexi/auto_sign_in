@@ -23,7 +23,7 @@
  
  - 修改名字、学号、密码等变量。
 
- - 运行 daka.py 
+  运行 autoBadgeSystem.py
 
 ---
 
