@@ -26,8 +26,13 @@
     - webdriver 下载地址：http://chromedriver.storage.googleapis.com/index.html
 
  - 打开autoBadgeSystem.py在相应位置修改名字、学号、密码等变量。
-- 进入百度开放平台：https://ai.baidu.com/获取文字识别，根据提供文档获取相应的Access_token
+
+- 进入百度开放平台：https://ai.baidu.com/        
+
+- 获取文字识别，根据提供文档获取相应的Access_token
+
 - 打开recognize.py在相应位置输入获取的Access_token
+
  - 运行 autoBadgeSystem.py
 
 ---
