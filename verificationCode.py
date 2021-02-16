@@ -6,15 +6,12 @@ def save_img(data):
     img_url = data
     file_path = 'img'
     file_name = "pyt"
-
     try:
         # 是否有这个路径
         if not os.path.exists(file_path):
             # 创建路径
             os.makedirs(file_path)
             # 获得图片后缀
-        # file_suffix = os.path.splitext(img_url)[1]
-        # print(file_suffix)
         # 拼接图片名（包含路径）
         filename = '{}{}{}{}'.format(file_path, os.sep, file_name, '.png')
         print(filename)
@@ -25,6 +22,7 @@ def save_img(data):
         print("IOError")
     except Exception as e:
         print("Exception")
+
 def base64change(url):
     import base64
     img = base64.urlsafe_b64decode(url + '=' * (4 - len(url) % 4))
@@ -35,7 +33,6 @@ def yanzheng(yanzheng):
 
     import base64
     import os
-    #验证 base64长度合法性
     lens = len(yanzheng)
     lenx = lens - (lens % 4 if lens % 4 else 4)
     try:
