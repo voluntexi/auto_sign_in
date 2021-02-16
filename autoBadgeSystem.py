@@ -11,9 +11,9 @@ sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf8')  # 改变标�
 # 建立chrome浏览器对象，括号里是Chromedriver在你的电脑上的路径，需要修改
 browser = webdriver.Chrome('E:/daka/chromedriver')
 # 基本信息，需要修改
-xuehao = '3120180901401'
-name = '席铁钧'
-password = 'xtj125478963'
+xuehao = '学号'
+name = '姓名'
+password = '密码'
 # 登录页面
 url = 'https://wxyqfk.zhxy.net/?yxdm=10623#/login'
 browser.set_window_size(598, 702)

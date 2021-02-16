@@ -8,8 +8,8 @@ def recognize(url):
     request_url = "https://aip.baidubce.com/rest/2.0/ocr/v1/general_basic"
     img = url
     params = {"image":img}
-    #tocken 由上面的touken()生成
-    access_token = '24.44ba2a866c651be8fa8fb066a532331c.2592000.1614014544.282335-23581523'
+    #token 输入token
+    access_token = '输入获取的token'
     request_url = request_url + "?access_token=" + access_token
     headers = {'content-type': 'application/x-www-form-urlencoded'}
     response = requests.post(request_url, data=params, headers=headers)
@@ -36,7 +36,8 @@ def recognize2(url):
     request_url = "https://aip.baidubce.com/rest/2.0/ocr/v1/accurate_basic"
     img = url.split(',')[1]
     params = {"image": img}
-    access_token = '24.44ba2a866c651be8fa8fb066a532331c.2592000.1614014544.282335-23581523'
+     #token 输入token
+    access_token = '输入获取的token'
     request_url = request_url + "?access_token=" + access_token
     headers = {'content-type': 'application/x-www-form-urlencoded'}
     response = requests.post(request_url, data=params, headers=headers)
